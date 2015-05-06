@@ -1,26 +1,17 @@
-//toggle
+//toggle-menu
 $(document).ready(function  () {
-	$("#menu").click(function () {
-		$("#aside").toggle("swing");
+	$("#bar").click(function () {
+		$("#menu").toggle("swing");
+		console.log("click en la barra");
 	});
 });
-//toggle chat
-$(document).ready(function  () {
-	$("#chats").click(function () {
-		$("#chat").toggle("swing");
-	});
-});
+
 
 //scrooll
 $(document).ready(function  () {
 	$(window).scroll(function  () {
-		$("#aside").hide("swing");
+		$("#menu").hide("swing");
 	});
 });
 
-$(document).ready(function  () {
-	$(window).scroll(function  () {
-		$("#chat").hide("swing");
-	});
-});
 
