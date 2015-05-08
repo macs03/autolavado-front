@@ -7,42 +7,68 @@
 	<title>Autolavado</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'/>
 	<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/estilos.css">
 	<link rel="shorcut icon" href="/img/camaro.ico">
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="https://raw.github.com/HPNeo/gmaps/master/gmaps.js"></script>
+
 </head>
 <body>
 	<header id="header">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12">
-				<h1 class="pull-left">AUTOLAVADO</h1>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h1 class="pull-left">MULTISERVICIO DE LUJO</h1>
 				<a id="bar" class="pull-right bar-menu">
 					<i class="fa fa-bars fa-lg"></i>
 				</a>
+				<div class="col-md-8 pull-right">
+					<ul id="menu2" class="menu2">
+						<li><a href="#top" class="toplink col-md-2 text-center">
+							INICIO
+						</a></li>
+						<li><a href="#services" class="toplink col-md-2 text-center">
+							SERVICIOS
+						</a></li>
+						<li><a href="#message" class="toplink col-md-2 text-center">
+							NOSOTROS
+						</a></li>
+						<li><a href="#location" class="toplink col-md-2 text-center">
+							UBICANOS
+						</a></li>
+						<li><a href="#social" class="toplink col-md-2 text-center">
+							SIGUENOS
+						</a></li>
+						<li><a href="#contact" class="toplink col-md-2 text-center">
+							CONTACTANOS
+						</a></li>
+					</ul>
+				</div>
 			</div>	
 		</div>
 		
 		<ul id="menu">
 			<li><a href="#top" class="toplink">
-				inicio
+				INICIO
 			</a></li>
 			<li><a href="#services" class="toplink">
-				servicios
+				SERVICIOS
 			</a></li>
 			<li><a href="#message" class="toplink">
-				nosotros
+				NOSOTROS
 			</a></li>
 			<li><a href="#location" class="toplink">
-				ubicanos
+				UBICANOS
 			</a></li>
 			<li><a href="#social" class="toplink">
-				siguenos
+				SIGUENOS
 			</a></li>
 			<li><a href="#contact" class="toplink">
-				contactanos
+				CONTACTANOS
 			</a></li>
 		</ul>
 
@@ -52,49 +78,80 @@
 			<div class="transparencia">
 				<div class="row">
 				
-					<div class="col-xs-12 col-sm-12 lessopacity">
+					<div class="col-xs-12 col-sm-12 lessopacity margen-top">
 						<h2>
-							AUTOLAVADO
+							MULTISERVICIO
 						</h2>
-						<h4>mensajito</h4>
-						<form action="">
-							<input type="text" id="buqueda" name="busqueda" placeholder="Ingresa la placa de tu vehiculo" require />
+						<h2>
+							DE LUJO
+						</h2>
+						<h5>Busca el historial de tu carro</h5>
+						<div class="relativo ancho center-block">
+							<input type="text" class="form-control busqueda" placeholder="Ingrese Placa de su Vehiculo" require/>
+							<div class="absoluto lupa">
 							<a href="">
-								<i class="fa fa-search fa-lg"></i>	
-							</a>
-						</form>
+								<i class="fa fa-search fa-lg"></i>
+							</a>	
+							</div>
+						</div>
 					</div>
 				
 				</div>
 			</div>
 		</div>
 		<div id="services">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12">
-					<h3>SERVICIOS</h3>
-					<div class="servicio">
-						<h4>servicio</h4>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
-						</p>
-					</div>
-					<div class="servicio">
-						<h4>servicio</h4>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
-						</p>
-					</div>
-					<div class="servicio">
-						<h4>servicio</h4>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
-						</p>
-					</div>
-					<div class="servicio">
-						<h4>servicio</h4>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
-						</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 text-center">
+						<h3>NUESTROS SERVICIOS</h3>
+						<div class="servicio col-xs-12 col-sm-12 col-md-3 box-servicio">
+							<h4>ECOLOGICO</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
+							</p>
+						</div>
+						<div class="servicio col-xs-12 col-sm-12 col-md-3 box-servicio">
+							<h4>LAVADO COMPLETO</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
+							</p>
+						</div>
+						<div class="servicio col-xs-12 col-sm-12 col-md-3 box-servicio">
+							<h4>LAVADITO</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
+							</p>
+						</div>
+						<div class="servicio col-xs-12 col-sm-12 col-md-3 box-servicio">
+							<h4>ENGRASE</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
+							</p>
+						</div>
+						<div class="servicio col-xs-12 col-sm-12 col-md-3 box-servicio">
+							<h4>PULIDO</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
+							</p>
+						</div>
+						<div class="servicio col-xs-12 col-sm-12 col-md-3 box-servicio">
+							<h4>CAMBIO DE ACEITE</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
+							</p>
+						</div>
+						<div class="servicio col-xs-12 col-sm-12 col-md-3 box-servicio">
+							<h4>LIMPIEZA DE TAPICERIA</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
+							</p>
+						</div>
+						<div class="servicio col-xs-12 col-sm-12 col-md-3 box-servicio">
+							<h4>SERVICIO EN GENERAL</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, incidunt inventore odio tenetur expedita id tempora aspernatur fugiat praesentium quidem deleniti quisquam quam est vero. Consequuntur reiciendis provident, at beatae.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -102,10 +159,10 @@
 		<div id="message">
 			<div class="transparencia2">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 lessopacity">
+					<div class="col-xs-12 col-sm-12 lessopacity margen-top2">
 						<div class="">
-							<h3>NOSOTROS</h3>
-							<p>
+							<h3>ACERCA DE NOSOTROS</h3>
+							<p class="letragrande">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim non excepturi velit eius itaque repellendus quis possimus repellat corporis recusandae omnis odit laborum, ex provident eligendi culpa illum cupiditate ullam!
 							</p>
 						</div>
@@ -115,41 +172,52 @@
 		</div>
 		<div id="location">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12">
+				<div class="col-xs-12 col-sm-12 text-center">
 					<h3>UBICANOS</h3>
-					<div>
+					<div class="col-xs-12 col-sm-12 col-md-12">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt reprehenderit voluptates distinctio dolorem optio at eius autem, consequatur expedita possimus fugit. Quis rerum ad officia doloribus aspernatur, dolores, architecto.
 						</p>
-						<div class="map">
-						<!--	<iframe src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d31625.0260511532!2d-72.22595749306528!3d7.776222501598699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!1i0!3e6!4m3!3m2!1d7.7603253!2d-72.2139684!4m5!1s0x8e666c579d18fb45%3A0x2bb6762c201eab42!2sUniversidad+Nacional+Experimental+Del+tachira%2C+UNET%2C+Pueblo+nuevo%2C+San+critobal%2C+Estado+Tachira%2C+Venezuela%2C+San+Crist%C3%B3bal+5001!3m2!1d7.7934969999999995!2d-72.200003!5e0!3m2!1ses!2sve!4v1430940092926" width="400" height="300" frameborder="0" style="border:0"></iframe> -->
-						</div>
+						<p class="letragrande">
+							102, Melborne City,
+						</p>
+						<p class="letragrande">
+							United States - 600 - 009 -00.
+						</p>
+						<p class="letragrande">
+							Email : info@yourdomain.com
+						</p>
+						<div id="map"></div>
+						<button id="ir" class="col-xs-12 col-sm-12 col-md-12 pull-left btn btn-primary boton posicion">
+							IR
+						</button>
+						<ol id="instructions" class="col-xs-12 col-sm-12 col-md-12 text-left posicion2" style="width: 500px;"></ol>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="social">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12">
+				<div class="col-xs-12 col-sm-12 text-center">
 					<h3>SIGUENOS</h3>
-					<div class="google col-xs-6 col-xs-6 col-md-3">
+					<div class="google col-xs-6 col-xs-6 col-md-3 box-social">
 						<a href="">
-							<i class="fa fa-google-plus-square fa-3x"></i>
+							<i class="fa fa-google-plus-square fa-4x"></i>
 						</a>
 					</div>
-					<div class="facebook col-xs-6 col-xs-6 col-md-3">
+					<div class="facebook col-xs-6 col-xs-6 col-md-3 box-social">
 						<a href="">
-							<i class="fa fa-facebook-square fa-3x"></i>
+							<i class="fa fa-facebook-square fa-4x"></i>
 						</a>
 					</div>
-					<div class="twitter col-xs-6 col-xs-6 col-md-3">
+					<div class="twitter col-xs-6 col-xs-6 col-md-3 box-social">
 						<a href="">
-							<i class="fa fa-twitter-square fa-3x"></i>
+							<i class="fa fa-twitter-square fa-4x"></i>
 						</a>
 					</div>
-					<div class="instagram col-xs-6 col-xs-6 col-md-3">
+					<div class="instagram col-xs-6 col-xs-6 col-md-3 box-social">
 						<a href="">
-							<i class="fa fa-instagram fa-3x"></i>
+							<i class="fa fa-instagram fa-4x"></i>
 						</a>
 					</div>
 				</div>
@@ -157,17 +225,19 @@
 		</div>
 		
 		<div id="contact">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12">
-					<h3>CONTACTANOS</h3>
-					<form action="">
-						<input class="col-xs-12 col-sm-12" type="text" id="name" name="name" placeholder="Ingresa tu nombre" require>
-						<input class="col-xs-12 col-sm-12" type="mail" id="email" name="email" placeholder="ejemplo@ejemplo.com" require>
-						<textarea class="col-xs-12 col-sm-12" name="mensaje" id="mensaje" cols="30" rows="10">
-							
-						</textarea>
-						<input class="col-xs-4 col-sm-4 pull-right" type="submit" id="send" name="send" value="ENVIAR">
-					</form>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+						<h3>CONTACTANOS</h3>
+						<form action="">
+							<input class="col-xs-12 col-sm-12 col-md-6 form-control border" type="text" id="name" name="name" placeholder="Ingresa tu nombre" require>
+							<input class="col-xs-12 col-sm-12 col-md-6 form-control border" type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com" require>
+							<textarea class="col-xs-12 col-sm-12 form-control border" name="mensaje" id="mensaje" cols="30" rows="10">
+								
+							</textarea>
+							<input class="col-xs-4 col-sm-4 pull-right btn btn-primary boton" type="submit" id="send" name="send" value="ENVIAR">
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -183,5 +253,6 @@
 	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/irAnclas.js"></script>
 	<script type="text/javascript" src="/js/efectos.js"></script>
+	<script type="text/javascript" src="/js/mapa.js"></script>
 </body>
 </html>

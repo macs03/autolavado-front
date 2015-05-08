@@ -4,14 +4,25 @@ facebook = #385597
 twitter = #65B3DA
 google = #D94835
 instagram = #A27359
+hover = #5198AF
 
 body
 	background white
+	font-family: 'Open Sans', sans-serif;
 
 h1
 	color white
 	margin: 1em
 	font-size 1em
+	font-family: 'Fjalla One', sans-serif;
+
+h2
+	font-size 5.2em
+	font-family: 'Fjalla One', sans-serif;
+
+h3
+	font-family: 'Fjalla One', sans-serif;
+	font-size 2em
 		
 header
 	position fixed
@@ -24,6 +35,7 @@ footer
 	background colornav
 	color white
 	padding 1em 0
+	margin-top 1em
 	text-align center
 	width 100%
 	a 
@@ -50,6 +62,19 @@ footer
 	width 100%
 	height 260px
 	z-index 1
+
+#menu
+	display none
+
+#menu2
+	list-style: none
+	a
+		color white
+		padding 1em
+		
+.menu2 a:hover
+	background hover
+	text-decoration none
 	
 .transparencia2
 	background rgba(35, 133, 161, 0.7)
@@ -59,13 +84,21 @@ footer
 	
 .lessopacity
 	color white
+	text-align center
 	a
 		color botones
+
+.margen-top
+	margin-top: 3%;
+
+.margen-top2
+	margin-top: 3%;
 
 .bar-menu
 	display none
 
-
+.letragrande
+	font-size 1.5em
 
 .go-up
 	width 10%
@@ -74,33 +107,137 @@ footer
 .row
 	margin 0 !important
 
-.google
-	a
-		color google
-.facebook
-	a
-		color facebook
-.twitter
-	a
-		color twitter
-.instagram
-	a
-		color instagram
+.box-social
+	height 150px
+	margin 2em 0
+	i
+		padding-top .5em
+.box-social:hover
+	background #F5F5F5
+	box-shadow: 0px 3px 16px #888888
 
+.google
+.facebook
+.twitter
+.instagram
+	padding 1em
+	a
+		color colornav
+
+.relativo
+	position: relative
+
+.absoluto
+	position: absolute
+
+.ancho
+	width 300px
+
+.busqueda
+	background #F5F5F5
+	border-radius 10px
+	width 300px
+.border
+	background #F5F5F5
+	border-radius 10px
+	margin 1em 0
+	height 4em
+
+.boton
+	width 100px
+	background hover
+
+.lupa
+	margin-top -2.2em
+	padding .3em 1em
+	border-left solid 2px colornav
+	margin-left 250px
+	i
+		color  colornav
 	
-@media (max-width: 768px)
+
+.form-busqueda 
+	margin-right 13%
+	color black
+	text-align center
+
+.box-servicio
+	padding-top 2em	
+	p
+		height 200px
+		text-align justify
+		overflow: scroll
+		
+.box-servicio:hover
+	background #F5F5F5
+	box-shadow: 0px 3px 16px #888888
+	
+.posicion
+	margin 3em 17em
+.posicion2
+	margin-left 16em
+	font-family: 'Open Sans', sans-serif;
+    
+#services
+	margin-bottom 1em
+	
+#services
+#location
+#social
+#contact
+	padding 3em 0
+	
+#map
+	padding 2em
+	width 720px
+	height 400px
+	margin auto 
+	
+@media (max-width: 992px)
 	#menu
 		display none
 		border-top solid 1px white
 		list-style: none
 		li
-			padding .5em
+			padding 1em
 			a
 				color white
+	
+	#menu2
+		display none
+		
 	.bar-menu
 		display block
 		color white
 		cursor: pointer
-		margin: 1em 1em 1em 0	
+		margin: .8em 1em 1em 0
+	h2
+		font-size 4.2em
+		font-family: 'Fjalla One', sans-serif;
+	
+	.posicion
+		margin 3em 0
+	.posicion2
+		margin-left 0
+		width 300px !important
+			
+@media (max-width: 768px)	
+	.margen-top
+		margin-top: 15%;
 
+	.margen-top2
+		margin-top: 10%;
+	
+	.form-busqueda 
+		margin-right 50%
+		color black
+		text-align center
+		width 100px
+	#map
+		padding 2em
+		width 320px
+		height 300px
+		margin auto 
+	.letragrande
+		font-size 1.2em
 
