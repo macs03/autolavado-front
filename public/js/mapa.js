@@ -6,7 +6,20 @@ $(document).ready(function() {
         lng: -77.028333,
         zoom: 13
       });
-
+  GMaps.geolocate({
+        success: function(position){
+          map.setCenter(position.coords.latitude, position.coords.longitude);
+        },
+        error: function(error){
+          alert('Geolocation failed: '+error.message);
+        },
+        not_supported: function(){
+          alert("Your browser does not support geolocation");
+        },
+        always: function(){
+          console.log("Done!");
+        }
+      });
 	$("#ir").click(function  () {
 		map.travelRoute({
         origin: [-12.044012922866312, -77.02470665341184],
