@@ -15,6 +15,10 @@ h1
 	margin: 1em
 	font-size 1em
 	font-family: 'Fjalla One', sans-serif;
+	a
+		color white
+		&:hover
+			text-decoration none
 
 h2
 	font-size 5.2em
@@ -40,6 +44,9 @@ footer
 	width 100%
 	a 
 		color white
+
+.footer-fijo
+	margin-top auto
 
 #top
 	background url("../img/lavado1.jpg")
@@ -71,6 +78,18 @@ footer
 	a
 		color white
 		padding 1em
+
+.dis-user
+	li
+		color white
+		padding 1em
+		width 150px
+		a
+			margin-left 220%
+			margin-top -3.4em
+			padding 1em
+			width 100px
+
 		
 .menu2 a:hover
 	background hover
@@ -190,6 +209,46 @@ footer
 	width 720px
 	height 400px
 	margin auto 
+
+.dato-usuario
+	background rgba(35, 133, 161, 0.7)
+	height 200px
+
+.carro
+	margin-top 2em
+	text-align right
+	color white
+	font-size 3em
+	font-family 'Fjalla One', sans-serif
+.usuario
+	margin-top 2em
+	color white
+	font-size 3em
+	font-family 'Fjalla One', sans-serif
+
+.cabecera
+	background colornav
+	color white
+	height 45px
+	margin-bottom 1em
+	ul 
+		list-style: none
+		li
+			padding 1em
+		li:first-child
+			margin-left -2.5em
+		li:nth-child(2)
+			margin-left 6%
+			font-weight bold
+			font-size 1.5em
+			padding .3em
+		li:last-child
+			text-align right
+
+.contenido
+	margin-bottom 2em
+	display none
+
 	
 @media (max-width: 992px)
 	#menu
@@ -198,6 +257,7 @@ footer
 		list-style: none
 		li
 			padding 1em
+			color white
 			a
 				color white
 	
@@ -218,6 +278,14 @@ footer
 	.posicion2
 		margin-left 0
 		width 300px !important
+	
+	.carro
+		text-align center
+		margin-top 2em
+	.usuario
+		text-align center
+		margin-top 0
+		font-size 1em
 			
 @media (max-width: 768px)	
 	.margen-top
