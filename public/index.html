@@ -87,9 +87,17 @@
 						</h2>
 						<h5>Busca el historial de tu carro</h5>
 						<div class="relativo ancho center-block">
-							<input type="text" class="form-control busqueda" placeholder="AA111AA" require/>
+							<input type="text" id="placa" class="form-control busqueda" placeholder="AA111AA" require/>
+							<script>
+								var getMatricula = function  () {
+									var matricula = document.getElementById('placa').value;
+									console.log(matricula);
+									return "resultado/"+matricula;
+								}
+								
+							</script>
 							<div class="absoluto lupa">
-							<a href="">
+							<a href= getMatricula()>
 								<i class="fa fa-search fa-lg"></i>
 							</a>	
 							</div>
