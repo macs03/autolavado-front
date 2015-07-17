@@ -39,7 +39,7 @@ footer
 	background colornav
 	color white
 	padding 1em 0
-	margin-top 1em
+	margin-top 1.5em
 	text-align center
 	width 100%
 	a 
@@ -230,7 +230,9 @@ footer
 	background colornav
 	color white
 	height 45px
-	margin-bottom 1em
+	/*margin-bottom 1em*/
+	a
+		color white
 	ul 
 		list-style: none
 		li
@@ -244,10 +246,33 @@ footer
 			padding .3em
 		li:last-child
 			text-align right
+	#iconito2
+		display none
+.open 
+	#iconito
+		display none
+	#iconito2
+		display block	
+
 
 .contenido
-	margin-bottom 2em
+	background #DCDDE0
+	margin-bottom 1em
 	display none
+	padding-bottom 1em
+
+.top-des-serv
+	padding .5em 4em 
+	border-bottom solid 1px gray
+	span
+		padding 0 2em
+		text-align center
+		
+.des-serv
+	padding .5em 4em
+	span
+		padding 0 2em
+		text-align center
 
 	
 @media (max-width: 992px)
@@ -306,4 +331,14 @@ footer
 		margin auto 
 	.letragrande
 		font-size 1.2em
+		
+	.top-des-serv
+		padding 1em
+		span
+			padding 0 .3em
+	
+	.des-serv
+		padding 1em
+		span
+			padding 0 .3em
 
